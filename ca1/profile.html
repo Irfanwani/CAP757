@@ -6,26 +6,41 @@
     <title>CV</title>
 
     <style>
-        div {
+        #heading {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            
+        }
+        #parent {
             margin: 30px;
             box-shadow: 10px 8px 10px 0.5px grey;
             padding: 20px;
             border-radius: 20px;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            width: 40%;
+            width: 50%;
             margin-left: 25%;
+
+
+
+
         }
     </style>
 </head>
 <body>
-    <div>
+    <div id="parent">
+
+    <div id="heading">
         <a href="https://resume.io/r/1jQqy4vF6"><img src="./dp.png" height="100" width="100" style="border-radius: 50px;" /></a>
-        <section>
+        <section style="padding-left: 30px">
             <h3>Name: Irfan Mehraj Wani</h3>
             <p>Registration Number: 12301696</p>
             <p>Address: Jammu & Kashmir, India</p>
         </section>
     </div>
+    <section style="border-top: 1px solid black; margin-top: 20px">
+        <h3>About</h3>
+        <p>Full Stack Web and App developer with over a year of professional experience as a react native developer. I have developed multiple projects for different startups with thousands of users.</p>
+    </section>
+</div>
+
 </body>
 </html>
