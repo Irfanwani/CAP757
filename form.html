@@ -21,7 +21,9 @@
     </style>
 </head>
 <body>
+
     <form>
+        <fieldset>
         <legend style="font-weight: bold;">Personal Details</legend>
         <section>
             <label for="name">Name:</label>
@@ -35,7 +37,6 @@
             <label for="email">E-mail id:</label>
             <input type="email" name="email" />
         </section>
-
         <section>
             <label for="radio">Gender:</label>
             <input name="radio" type="radio" value="Male" />
@@ -48,6 +49,7 @@
             <label for="contact">Contact:</label>
             <input type="tel" name="contact" />
         </section>
+   
 
         <legend style="margin: 30px 0px 10px 0px; font-size: 25px; font-weight: bold; color: red;">Educational Qualification</legend>
 
@@ -80,6 +82,7 @@
             <input name="books" type="checkbox" value="books" />
             <label for="books">Reading Books</label>
         </section>
+  
 
         <legend style="font-size: 20px; font-weight: bold; margin: 35px 0px 10px 0px">Address</legend>
         <textarea cols="30" rows="4"></textarea>
@@ -90,6 +93,8 @@
         </section>
 
         <button style="margin-top: 15px;" type="submit">Submit</button>
+    </fieldset>
+
     </form>
 </body>
 </html>
