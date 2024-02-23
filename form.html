@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        input, select {
+            margin: 0px 5px 0px 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <legend style="font-weight: bold;">Personal Details</legend>
+        <section>
+            <label for="name">Name:</label>
+            <input type="text" name="name" />
+        </section>
+        <section>
+            <label for="password">Password:</label>
+            <input type="password" name="password" />
+        </section>
+        <section>
+            <label for="email">E-mail id:</label>
+            <input type="email" name="email" />
+        </section>
+
+        <section>
+            <label for="radio">Gender:</label>
+            <input name="radio" type="radio" value="Male" />
+            <label for="radio">Male</label>
+            <input name="radio" type="radio" value="Female" />
+            <label for="radio">Female</label>
+        </section>
+
+        <section>
+            <label for="contact">Contact:</label>
+            <input type="tel" name="contact" />
+        </section>
+
+        <legend style="margin: 30px 0px 10px 0px; font-size: 25px; font-weight: bold; color: red;">Educational Qualification</legend>
+
+        <section>
+            <label for="degree">Degree:</label>
+            <select name="degree">
+                <option>-- Select Group --</option>
+                <option>Masters in Computer Applications</option>
+                <option>B. Tech in Computer Science</option>
+                <option>Bachelors in Computer Applications</option>
+                <option>Other</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="engineering">Engineering:</label>
+            <select name="engineering">
+                <option>-- Select Group --</option>
+                <option>Computer Science</option>
+                <option>Electrical and Electronics</option>
+                <option>Mechanical</option>
+                <option>Other</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="checkbox">Hobbies:</label>
+            <input name="chess" type="checkbox" value="chess" />
+            <label for="chess">Playing chess</label>
+            <input name="books" type="checkbox" value="books" />
+            <label for="books">Reading Books</label>
+        </section>
+
+        <legend style="font-size: 20px; font-weight: bold; margin: 35px 0px 10px 0px">Address</legend>
+        <textarea cols="30" rows="4"></textarea>
+
+        <section>
+            <label for="file">Attach Resume:</label>
+            <input type="file" name="file" />
+        </section>
+
+        <button style="margin-top: 15px;" type="submit">Submit</button>
+    </form>
+</body>
+</html>
