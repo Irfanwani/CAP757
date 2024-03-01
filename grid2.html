@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2.0</title>
+    <style>
+        p {
+            padding: 0px 0px 50px 0px;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 22% 22% 22% 22%;
+            gap: 3%;
+            row-gap: 0%;
+        }
+    </style>
+</head>
+<body>
+    <p style="background-color: aliceblue;">One</p>
+    <p style="background-color: violet;">Two</p>
+    <p style="background-color: Yellow; grid-column-start: 3; grid-column-end: 5;">Three</p>
+    <p style="background-color: greenyellow; grid-row-start: 2; grid-row-end: 4;">Four</p>
+    <p style="background-color: aqua;">Five</p>
+    <p style="background-color: grey;">six</p>
+    <p style="background-color: lightblue; grid-row-start: 2; grid-row-end: 4; grid-column-start: 4;">Seven</p>
+    <p style="background-color: deeppink;">Eight</p>
+    <p style="background-color: orange;">Nine</p>
+</body>
+</html>
