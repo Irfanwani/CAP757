@@ -1,0 +1,69 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+section {
+    height: 20vh;
+    width: 99%;
+    border: 1px solid black;
+}
+
+#nestedgrid1 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    padding: 2px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#nestedgrid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    padding: 2px;
+
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.red {
+    background-color: red;
+}
+
+.deeppink {
+    background-color: deeppink;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        display: block;
+    }
+
+    #nestedgrid1, #nestedgrid2 {
+        height: 20vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        margin: 5px 0px;
+    }
+}
